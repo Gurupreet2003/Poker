@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+}
+/* black screen */
+.black-screen {
+  display: flex;
+  background: rgb(0 0 0 / 80%);
+  position: absolute;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* main screen */
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./photo-1446669052213-5dcff53f1f3f.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+/* on table money */
+.amount-ontable {
+  background-color: rgb(0 0 0 / 50%);
+  height: 50px;
+  width: 80%;
+  align-self: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amount-ontable span {
+  font-weight: 600;
+}
+
+/* opponent records */
+
+.opponents-record-container {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: flex-start;
+}
+
+.opponent-table {
+  color: #fff;
+  background: rgb(0 0 0 / 50%);
+  font-family: monospace;
+  font-size: 13px;
+  height: 50px;
+}
+
+.opponent-table tbody {
+  padding: 10px 10px;
+}
+
+.opponent-table th {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.opponent-table td {
+  padding: 0 10px;
+  text-align: right;
+}
+
+.opponent-table .win-btn form {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.opponent-table .win-btn button {
+  font-family: monospace;
+  padding: 2px 10px;
+  background: rgb(0 0 0 / 40%);
+  border: solid 1px #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Player record */
+.my-record form button {
+  margin: 5px 0;
+  padding: 3px 20px;
+  font-family: monospace;
+  background-color: rgb(255 0 0 / 40%);
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+
+.refresh-btn {
+  margin: 5px 0;
+  padding: 3px 20px;
+  font-family: monospace;
+  background-color: rgb(0 0 0 / 40%);
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+.my-record {
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(255, 0, 0, 0.315);
+  overflow: hidden;
+}
+.my-record-display {
+  width: 100%;
+  font-family: monospace;
+  font-size: 16px;
+}
+.my-record-display td {
+  width: 50%;
+}
+.my-record-display td:nth-child(even) {
+  text-align: center;
+}
+.my-record-display td:nth-child(odd) {
+  padding-left: 10px;
+}
+.my-record-display tr:nth-child(odd) {
+  background-color: hsla(0, 0%, 0%, 0.6);
+  color: #fff;
+}
+.my-record-display tr:nth-child(even) {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  color: #fff;
+}
+
+.user-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#bet-ammount-input {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  width: 50%;
+  margin: 10px 0;
+  padding: 3px 0;
+  background-color: rgb(0 0 0 / 50%);
+  color: #fff;
+  border: solid 1px #fff;
+  outline: none;
+}
+
+.user-control .UI-btn {
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: solid 1px #fff;
+  border-radius: 50px;
+  color: #fff;
+}
+
+/* bet input */
+.bet-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-dsc-bet,
+#btn-inc-bet {
+  border: solid 1px #fff;
+  background: rgb(0 0 0 / 50%);
+  border-radius: 0;
+  height: 35px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  user-select: none;
+}
+#btn-dsc-bet {
+  border-right: 0;
+}
+#btn-inc-bet {
+  border-left: 0;
+}
